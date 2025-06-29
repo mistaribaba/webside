@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        div {
+            border: 2px solid rgb(216, 21, 21);
+            padding: 20px;
+        }
+
+        .formate {
+            border: 2px solid rgb(21, 216, 21);
+            margin: 10px;
+            padding: 10px !important;
+            margin-bottom: 10px;
+            padding: 0;
+        }
+
+        .formate p {
+            font-size: small;
+        }
+
+        .formate label {
+            font-size: 16px;
+            ;
+        }
+
+
+
+        @media (orientation: portrait) {
+            .formate label {
+                font-size: 26px;
+            }
+
+            input[placeholder] {
+                font-size: 23px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>User Registration Form</h2>
+    <div>
+        <form action="put">
+
+            <div class="formate">
+                <label for="name">Full Name</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your full name"><br><br>
+                <p>
+                    &lt;label for=&quot;name&quot;&gt;Full Name&lt;/label&gt;<br>
+                    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;name&quot; placeholder=&quot;Enter your full name&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="email">Email Address</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your email"><br><br>
+                <p>
+                    &lt;label for=&quot;email&quot;&gt;Email Address&lt;/label&gt;<br>
+                    &lt;input type=&quot;email&quot; name=&quot;email&quot; id=&quot;email&quot; placeholder=&quot;Enter your email&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" placeholder="Create a password"><br><br>
+                <p>
+                    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;<br>
+                    &lt;input type=&quot;password&quot; name=&quot;password&quot; id=&quot;password&quot; placeholder=&quot;Create a password&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" placeholder="Enter your age"><br><br>
+                <p>
+                    &lt;label for=&quot;age&quot;&gt;Age&lt;/label&gt;<br>
+                    &lt;input type=&quot;number&quot; name=&quot;age&quot; id=&quot;age&quot; placeholder=&quot;Enter your age&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="btn">Click to Confirm</label><br>
+                <input type="button" id="btn" value="Confirm"><br><br>
+                <p>
+                    &lt;label for=&quot;btn&quot;&gt;Click to Confirm&lt;/label&gt;<br>
+                    &lt;input type=&quot;button&quot; id=&quot;btn&quot; value=&quot;Confirm&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="chk">Accept Terms & Conditions</label><br>
+                <input type="checkbox" id="chk" name="chk"><br><br>
+                <p>
+                    &lt;label for=&quot;chk&quot;&gt;Accept Terms &amp; Conditions&lt;/label&gt;<br>
+                    &lt;input type=&quot;checkbox&quot; id=&quot;chk&quot; name=&quot;chk&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="clr">Favorite Color</label><br>
+                <input type="color" id="clr" name="clr"><br><br>
+                <p>
+                    &lt;label for=&quot;clr&quot;&gt;Favorite Color&lt;/label&gt;<br>
+                    &lt;input type=&quot;color&quot; id=&quot;clr&quot; name=&quot;clr&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="dt">Date of Birth</label><br>
+                <input type="date" id="dt" name="dt"><br><br>
+                <p>
+                    &lt;label for=&quot;dt&quot;&gt;Date of Birth&lt;/label&gt;<br>
+                    &lt;input type=&quot;date&quot; id=&quot;dt&quot; name=&quot;dt&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="dtl">Appointment Date & Time</label><br>
+                <input type="datetime-local" id="dtl" name="dtl"><br><br>
+                <p>
+                    &lt;label for=&quot;dtl&quot;&gt;Appointment Date &amp; Time&lt;/label&gt;<br>
+                    &lt;input type=&quot;datetime-local&quot; id=&quot;dtl&quot; name=&quot;dtl&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="eml">Alternate Email</label><br>
+                <input type="email" id="eml" name="eml" placeholder="Enter alternate email"><br><br>
+                <p>
+                    &lt;label for=&quot;eml&quot;&gt;Alternate Email&lt;/label&gt;<br>
+                    &lt;input type=&quot;email&quot; id=&quot;eml&quot; name=&quot;eml&quot; placeholder=&quot;Enter alternate email&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="file">Profile Picture</label><br>
+                <input type="file" id="file" name="file"><br><br>
+                <p>
+                    &lt;label for=&quot;file&quot;&gt;Profile Picture&lt;/label&gt;<br>
+                    &lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot;&gt;
+                </p>
+            </div>
+
+            <!-- Hidden input does not need a label -->
+            <div class="formate">
+                <input type="hidden" id="hid" name="hid" value="hiddenValue"><br><br>
+                <p>
+                    &lt;input type=&quot;hidden&quot; id=&quot;hid&quot; name=&quot;hid&quot; value=&quot;hiddenValue&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="img">Upload via Image Button</label><br>
+                <input type="image" id="img" src="https://via.placeholder.com/50" alt="Upload" width="50" height="50"><br><br>
+                <p>
+                    &lt;label for=&quot;img&quot;&gt;Upload via Image Button&lt;/label&gt;<br>
+                    &lt;input type=&quot;image&quot; id=&quot;img&quot; src=&quot;https://via.placeholder.com/50&quot; alt=&quot;Upload&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="mnth">Subscription Month</label><br>
+                <input type="month" id="mnth" name="mnth"><br><br>
+                <p>
+                    &lt;label for=&quot;mnth&quot;&gt;Subscription Month&lt;/label&gt;<br>
+                    &lt;input type=&quot;month&quot; id=&quot;mnth&quot; name=&quot;mnth&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="num">Number of Family Members</label><br>
+                <input type="number" id="num" name="num" placeholder="Enter number"><br><br>
+                <p>
+                    &lt;label for=&quot;num&quot;&gt;Number of Family Members&lt;/label&gt;<br>
+                    &lt;input type=&quot;number&quot; id=&quot;num&quot; name=&quot;num&quot; placeholder=&quot;Enter number&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="pwd">Re-enter Password</label><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Re-enter your password"><br><br>
+                <p>
+                    &lt;label for=&quot;pwd&quot;&gt;Re-enter Password&lt;/label&gt;<br>
+                    &lt;input type=&quot;password&quot; id=&quot;pwd&quot; name=&quot;pwd&quot; placeholder=&quot;Re-enter your password&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label>Gender:</label><br>
+                <input type="radio" id="rd" name="gender" value="male">
+                <label for="rd">Male</label>
+                <input type="radio" id="rd2" name="gender" value="female">
+                <label for="rd2">Female</label><br><br>
+                <p>
+                    &lt;label&gt;Gender:&lt;/label&gt;<br>
+                    &lt;input type=&quot;radio&quot; id=&quot;rd&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;
+                    &lt;label for=&quot;rd&quot;&gt;Male&lt;/label&gt;
+                    &lt;input type=&quot;radio&quot; id=&quot;rd2&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;
+                    &lt;label for=&quot;rd2&quot;&gt;Female&lt;/label&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="rng">Satisfaction Level</label><br>
+                <input type="range" id="rng" name="rng" min="0" max="100"><br><br>
+                <p>
+                    &lt;label for=&quot;rng&quot;&gt;Satisfaction Level&lt;/label&gt;<br>
+                    &lt;input type=&quot;range&quot; id=&quot;rng&quot; name=&quot;rng&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="srch">Search Interests</label><br>
+                <input type="search" id="srch" name="srch" placeholder="Search..."><br><br>
+                <p>
+                    &lt;label for=&quot;srch&quot;&gt;Search Interests&lt;/label&gt;<br>
+                    &lt;input type=&quot;search&quot; id=&quot;srch&quot; name=&quot;srch&quot; placeholder=&quot;Search...&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="sub">Submit Registration</label><br>
+                <input type="submit" id="sub" value="Register"><br><br>
+                <p>
+                    &lt;label for=&quot;sub&quot;&gt;Submit Registration&lt;/label&gt;<br>
+                    &lt;input type=&quot;submit&quot; id=&quot;sub&quot; value=&quot;Register&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="tel">Phone Number</label><br>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number"><br><br>
+                <p>
+                    &lt;label for=&quot;tel&quot;&gt;Phone Number&lt;/label&gt;<br>
+                    &lt;input type=&quot;tel&quot; id=&quot;tel&quot; name=&quot;tel&quot; placeholder=&quot;Enter your phone number&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="txt">Short Bio</label><br>
+                <input type="text" id="txt" name="txt" placeholder="Tell us about yourself"><br><br>
+                <p>
+                    &lt;label for=&quot;txt&quot;&gt;Short Bio&lt;/label&gt;<br>
+                    &lt;input type=&quot;text&quot; id=&quot;txt&quot; name=&quot;txt&quot; placeholder=&quot;Tell us about yourself&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="tm">Preferred Contact Time</label><br>
+                <input type="time" id="tm" name="tm"><br><br>
+                <p>
+                    &lt;label for=&quot;tm&quot;&gt;Preferred Contact Time&lt;/label&gt;<br>
+                    &lt;input type=&quot;time&quot; id=&quot;tm&quot; name=&quot;tm&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="url">Personal Website</label><br>
+                <input type="url" id="url" name="url" placeholder="Enter your website URL"><br><br>
+                <p>
+                    &lt;label for=&quot;url&quot;&gt;Personal Website&lt;/label&gt;<br>
+                    &lt;input type=&quot;url&quot; id=&quot;url&quot; name=&quot;url&quot; placeholder=&quot;Enter your website URL&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="wk">Preferred Week for Appointment</label><br>
+                <input type="week" id="wk" name="wk"><br><br>
+                <p>
+                    &lt;label for=&quot;wk&quot;&gt;Preferred Week for Appointment&lt;/label&gt;<br>
+                    &lt;input type=&quot;week&quot; id=&quot;wk&quot; name=&quot;wk&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="rst">Reset Form</label><br>
+                <input type="reset" id="rst" value="Reset"><br><br>
+                <p>
+                    &lt;label for=&quot;rst&quot;&gt;Reset Form&lt;/label&gt;<br>
+                    &lt;input type=&quot;reset&quot; id=&quot;rst&quot; value=&quot;Reset&quot;&gt;
+                </p>
+            </div>
+
+            <div class="formate">
+                <label for="sub">Submit Registration</label><br>
+                <input type="submit" id="sub" value="Register"><br><br>
+                <p>
+                    &lt;label for=&quot;sub&quot;&gt;Submit Registration&lt;/label&gt;<br>
+                    &lt;input type=&quot;submit&quot; id=&quot;sub&quot; value=&quot;Register&quot;&gt;
+                </p>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

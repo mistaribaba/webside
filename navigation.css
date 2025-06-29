@@ -1,0 +1,106 @@
+nav {
+   background-color: #004AAD !important;
+   padding: 1rem 0;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+ }
+body{
+  background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+
+  body:has(#theme-switch:checked){
+    background-color: black;
+    color: rgb(202, 202, 202);
+     transition: all 0.5s;
+  }
+
+
+#nightmodebuttone{
+  position: fixed;
+  padding: 10px;
+  border-radius: 20px;
+  right: 28px;
+ top:15px;
+}
+#theme-switch{
+  display: none;
+}
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+ }
+
+ #homenav {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ body {
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+
+ .nav {
+   padding: 0.8rem 2rem;
+   background-color: #F8F8F8;
+   border-radius: 25px;
+   color: #2E8B57;
+   font-weight: bold;
+   border: 2px solid #2E8B57;
+   transition: all 0.4s ease-in-out;
+   cursor: pointer;
+ }
+
+ .nav:hover {
+   background-color: #2E8B57;
+   color: white;
+   transform: scale(1.1);
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+ }
+
+ li.nav {
+   list-style: none;
+   padding: 20;
+ }
+
+ /* html code */
+
+ /*    
+ 
+ 
+<nav>
+    <ul id="homenav">
+      <a href="sem1.html">
+        <li class="nav"> Semester 1</li>
+      </a>
+      <a href="sem2.html" style="text-decoration: none;">
+        <li class="nav">Semester 2</li>
+      </a>
+      <a href="about us.html">
+        <li class="nav">About us</li>
+      </a>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+  */

@@ -1,0 +1,108 @@
+/* for android and iOS phones */
+@media (orientation: portrait) {
+  #homenav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* Changed from 3rem */
+  }
+#info pre>code{
+  font-size: 2.5rem !important;
+}
+  .nav {
+    padding: 0.8rem 1rem;
+    /* Adjusted padding for smaller screens */
+    margin-left: 10px;
+    font-size: 30px;
+  }
+
+  .button-link {
+    font-size: 40px;
+    justify-content: center;
+  }
+
+  table {
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+    border-color: white;
+    border-width: 2px;
+    margin: 2vmax;
+    padding: 2vmax;
+    font-size: 2.5rem;
+  }
+
+  dt {
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+
+  }
+
+  .button-link {
+    font-size: 10px;
+  }
+
+  .para {
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  #info pre>code {
+    font-size: 2rem;
+
+  }
+
+  #info pre {
+    font-size: 2rem;
+
+  }
+
+  iframe {
+    width: 60vw;
+    height: 20vh;
+  }
+
+  #form {
+    height: 75vh;
+  }
+
+  #form iframe {
+    width: 60vmax;
+    height: 75vmax;
+  }
+
+  #form2 {
+    height: 45vh;
+  }
+
+  #form2 iframe {
+    width: 34vmax;
+    height: 45vmax;
+  }
+}
+
+/* for cumputer */
+@media (orientation: landscape) {
+
+#form {
+  height: 188vh;
+}
+
+#form iframe {
+  width: 60vw;
+  height: 188vh;
+}
+
+#form2 {
+  height: 150vh;
+}
+
+#form2 iframe {
+  width: 43vw;
+  height: 150vh;
+}
+}
